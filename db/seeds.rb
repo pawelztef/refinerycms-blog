@@ -7,7 +7,7 @@ end if defined?(Refinery::User)
 
 if defined?(Refinery::Page) and !Refinery::Page.exists?(:link_url => (url = Refinery::Blog.page_url))
   page = Refinery::Page.create(
-    :title => "Blog",
+    :title => "Journal",
     :link_url => url,
     :deletable => false,
     :menu_match => "^#{url}?(\/|\/.+?|)$"
